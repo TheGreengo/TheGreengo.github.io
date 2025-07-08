@@ -3,9 +3,30 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>The Greengo's Github Site</title>
+        <title>The Greengo's Edge Detector</title>
+        <link rel="stylesheet" type="text/css" href="edges.css">
     </head>
     <body>
         <h1>Easy Edge Detector</h1>
+        <p>
+            This tool uses canny edge detection to try transform an 
+            image into a reduced image containing the edges from within 
+            the original picture.
+        </p>
+        <div>
+            <!-- First, we need a way to upload an image -->
+            <label for="img-upload">Upload Image</label>
+            <input id="img-upload" type="file" accept="image/*">
+            <img src="#" id="original" alt="Original Image">
+            <!-- Then, we need to be able to pull the data from -->
+            <!--   said image -->
+            <!-- Then, we can have some sort of button to do the -->
+            <!--   transform -->
+            <!-- We could also have something to customize the -->
+            <!--   transform -->
+            <!-- Then we need some way to display the transformed -->
+            <!--   image -->
+        </div>
+        <script src="edges.js"></script>
     </body>
 </html>
