@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
@@ -9,27 +8,28 @@
     <body>
         <h1>Easy Edge Detector</h1>
         <p>
-            This tool uses canny edge detection to try transform an 
-            image into a reduced image containing the edges from within 
-            the original picture.
+            This tool uses the extended difference of Gaussians to try 
+            transform an image into a reduced image containing the 
+            edges from within the original picture.
         </p>
-        <div>
-            <!-- First, we need a way to upload an image -->
-            <label for="img-upload">Upload Image</label>
-            <input id="img-upload" type="file" accept="image/*">
-            <canvas id="orig"></canvas>
-            <canvas id="nuevo"></canvas>
-            <!-- Then, we need to be able to pull the data from -->
-            <!--   said image -->
-            <!-- Then, we can have some sort of button to do the -->
-            <!--   transform -->
-            <!-- We could also have something to customize the -->
-            <!--   transform -->
-            <!-- Then we need some way to display the transformed -->
-            <!--   image -->
-        </div>
-        <div>
-            <button id="img_conv">Convert Image</button>
+        <div class="top_box">
+            <div class="inp_box">
+                <label for="tau">Tau</label>
+                <input id="tau" type="number" step="0.01" value="10">
+                <label for="threshold">Threshold</label>
+                <input id="threshold" type="number" step="0.005" value="0.5">
+                <label for="sig">Sigma</label>
+                <input id="sig" type="number" step="0.01" value="1">
+                <label for="k">K</label>
+                <input id="k" type="number" step="0.01" value="4">
+                <label for="img-upload">Upload Image</label>
+                <input id="img-upload" type="file" accept="image/*">
+                <button id="img_conv">Convert Image</button>
+            </div>
+            <div class="img_box">
+                <canvas id="orig"></canvas>
+                <canvas id="nuevo"></canvas>
+            </div>
         </div>
         <script src="edges.js"></script>
     </body>
