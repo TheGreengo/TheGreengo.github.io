@@ -25,6 +25,24 @@
                 <label for="img-upload">Upload Image</label>
                 <input id="img-upload" type="file" accept="image/*">
                 <button id="img_conv">Convert Image</button>
+                <div class="func-radio">
+                    <div>
+                        <label>Threshold</label>
+                        <input type="radio" name="method" value="thresh" checked>
+                    </div>
+                    <div>
+                        <label>Sobel</label>
+                        <input type="radio" name="method" value="sobel">
+                    </div>
+                    <div>
+                        <label>Canny</label>
+                        <input type="radio" name="method" value="canny">
+                    </div>
+                    <div>
+                        <label>XDoG</label>
+                        <input type="radio" name="method" value="xdog">
+                    </div>
+                </div>
             </div>
             <div class="img_box">
                 <canvas id="orig"></canvas>

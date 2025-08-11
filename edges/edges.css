@@ -28,3 +28,8 @@ canvas {
     max-height:300px;
     width: auto;
 }
+
+.func-radio {
+    display: flex;
+    flex-direction: column;
+}
